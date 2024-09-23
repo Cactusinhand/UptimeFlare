@@ -19,11 +19,11 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'blog',
       // `name` is used at status page and callback message
       name: 'My blog Monitor',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://oschina.win',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
