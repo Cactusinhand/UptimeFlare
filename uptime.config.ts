@@ -37,28 +37,16 @@ const workerConfig = {
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+        // Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
+      // body: 'Hello, world!',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
       responseKeyword: 'success',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       checkLocationWorkerRoute: 'https://xxx.example.com',
     },
-    // Example TCP Monitor
-    // {
-    //   id: 'test_tcp_monitor',
-    //   name: 'Example TCP Monitor',
-    //   // `method` should be `TCP_PING` for tcp monitors
-    //   method: 'TCP_PING',
-    //   // `target` should be `host:port` for tcp monitors
-    //   target: '1.2.3.4:22',
-    //   tooltip: 'My production server SSH',
-    //   statusPageLink: 'https://example.com',
-    //   timeout: 5000,
-    // },
   ],
   notification: {
     // [Optional] apprise API server URL
