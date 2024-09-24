@@ -27,7 +27,7 @@ const workerConfig = {
       id: 'tcp_monitor',
       name: 'My blog TCP Monitor',
       method: 'TCP_PING',
-      target: 'oschina.win',
+      target: '104.21.36.225',
       tooltip: 'https://oschina.win',
       statusPageLink: 'https://oschina.win',
     },
