@@ -23,14 +23,14 @@ const workerConfig = {
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200, 403],
     },
-    {
-      id: 'tcp_monitor',
-      name: 'My blog TCP Monitor',
-      method: 'TCP_PING',
-      target: 'oschina.win',
-      tooltip: 'https://oschina.win',
-      statusPageLink: 'https://oschina.win',
-    },
+    // {
+    //   id: 'tcp_monitor',
+    //   name: 'My blog TCP Monitor',
+    //   method: 'TCP_PING',
+    //   target: 'oschina.win',
+    //   tooltip: 'https://oschina.win',
+    //   statusPageLink: 'https://oschina.win',
+    // },
   ],
   notification: {
     // [Optional] apprise API server URL
