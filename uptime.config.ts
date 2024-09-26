@@ -1,9 +1,9 @@
 const pageConfig = {
   title: "Cactusinhand's Status Page",
   links: [
-    { link: 'https://github.com/cactusinhand', label: 'GitHub', highlight: true },
+    { link: 'https://github.com/Cactusinhand/UptimeFlare', label: 'GitHub', highlight: true },
     { link: 'https://oschina.win/', label: 'Blog' },
-    { link: 'mailto:colin1@foxmail.com', label: 'Email Me'},
+    { link: 'mailto:me@oschina.win', label: 'Email'},
   ],
 }
 
@@ -14,8 +14,8 @@ const workerConfig = {
   // passwordProtection: 'username:password',
   monitors: [
     {
-      id: 'http_monitor',
-      name: 'My blog HTTP Monitor',
+      id: 'CF',
+      name: 'blog hosted on CloudFlare Monitor',
       method: 'GET',
       target: 'https://oschina.win',
       tooltip: 'https://oschina.win',
@@ -23,14 +23,26 @@ const workerConfig = {
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200, 403],
     },
-    // {
-    //   id: 'tcp_monitor',
-    //   name: 'My blog TCP Monitor',
-    //   method: 'TCP_PING',
-    //   target: 'oschina.win',
-    //   tooltip: 'https://oschina.win',
-    //   statusPageLink: 'https://oschina.win',
-    // },
+    {
+      id: 'Vercel',
+      name: 'Blog hosted on Vercel Monitor',
+      method: 'GET',
+      target: 'https://vercel.oschina.win',
+      tooltip: 'https://vercel.oschina.win',
+      statusPageLink: 'https://vercel.oschina.win',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      // expectedCodes: [200, 403],
+    },
+    {
+      id: 'OneDriver',
+      name: 'OneDriver Monitor',
+      method: 'GET',
+      target: 'https://cloud.oschina.win',
+      tooltip: 'https://cloud.oschina.win',
+      statusPageLink: 'https://cloud.oschina.win',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      // expectedCodes: [200, 403],
+    },
   ],
   notification: {
     // [Optional] apprise API server URL
