@@ -14,8 +14,8 @@ const workerConfig = {
   // passwordProtection: 'username:password',
   monitors: [
     {
-      id: 'CF',
-      name: 'blog hosted on CloudFlare Monitor',
+      id: 'http_monitor',
+      name: 'My blog HTTP Monitor',
       method: 'GET',
       target: 'https://oschina.win',
       tooltip: 'https://oschina.win',
@@ -23,16 +23,16 @@ const workerConfig = {
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       // expectedCodes: [200, 403],
     },
-    {
-      id: 'Vercel',
-      name: 'Blog hosted on Vercel Monitor',
-      method: 'TCP_PING',
-      target: 'vercel.oschina.win',
-      tooltip: 'https://vercel.oschina.win',
-      statusPageLink: 'https://vercel.oschina.win',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      // expectedCodes: [200, 403],
-    },
+    // {
+    //   id: 'Vercel',
+    //   name: 'Blog hosted on Vercel Monitor',
+    //   method: 'TCP_PING',
+    //   target: 'vercel.oschina.win',
+    //   tooltip: 'https://vercel.oschina.win',
+    //   statusPageLink: 'https://vercel.oschina.win',
+    //   // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+    //   // expectedCodes: [200, 403],
+    // },
     {
       id: 'OneDriver',
       name: 'OneDriver Monitor',
