@@ -26,8 +26,8 @@ const workerConfig = {
     {
       id: 'Vercel',
       name: 'Blog hosted on Vercel Monitor',
-      method: 'GET',
-      target: 'https://vercel.oschina.win',
+      method: 'TCP_PING',
+      target: 'vercel.oschina.win',
       tooltip: 'https://vercel.oschina.win',
       statusPageLink: 'https://vercel.oschina.win',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
